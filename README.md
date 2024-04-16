@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+## scripts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+npm i
+npm run dev
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Login Page:
+Design a login page with fields for username and password using Material UI components.
+Implement authentication logic in React to verify the admin's credentials. You can use hardcoded credentials for simplicity.
 
-## Expanding the ESLint configuration
+Admin Dashboard:
+After successful login, navigate the admin to the dashboard.
+Display a menu with options such as "Users List," "Create User," etc., using Material UI components like AppBar and Drawer.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Users List Page:
+Create a page to display the list of users using Material UI Table components.
+Show columns for name, email, phone number, and age for each user. Populate the user data statically using an array of objects in your frontend code.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Modals for CRUD Operations:
+Implement modals for creating, updating, and deleting users using Material UI Dialog components.
+When the admin clicks on "Create User," show a modal with input fields for name, email, phone number, and age. On submission, add the new user to the list.
+For updating a user, show a modal with pre-filled data that the admin can edit. Update the user details in the list accordingly.
+Implement a confirmation modal for deleting users. On confirmation, remove the user from the list.
