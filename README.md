@@ -1,8 +1,10 @@
 ## scripts
 
+```js
 npm i
 npm run dev
 
+```
 
 Login Page:
 Design a login page with fields for username and password using Material UI components.
