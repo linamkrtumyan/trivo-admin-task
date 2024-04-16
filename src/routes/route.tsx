@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Loader from "../components/loader";
-import { NotfoundPage, LoginPage, UserPage } from "../pages";
+import { LoginPage, UserPage } from "../pages";
 import { RootState } from "../store/store";
 import { useSelector } from "react-redux";
 
@@ -25,15 +25,5 @@ export default function Root() {
       )}
       </Suspense>
     </>
-
-    // <>
-    //   <Suspense fallback={<Loader />}>
-    //   <Routes>
-    //     <Route path="/login" element={<LoginPage />} />
-    //     <Route path="/users" element={<UserPage />} />
-    //     <Route path="*" element={<NotfoundPage />} /> {/* Catch-all route */}
-    //   </Routes>
-    //   </Suspense>
-    // </>
   );
 }

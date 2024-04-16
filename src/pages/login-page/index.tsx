@@ -48,7 +48,7 @@ export function LoginPage(): ReactElement {
   } = useForm<FormValues>();
 
   const dispatch = useDispatch();
-  const isLoading = useSelector((state: RootState) => state.login.isLoading);
+  // const isLoading = useSelector((state: RootState) => state.login.isLoading);
   const error = useSelector((state: RootState) => state.login.error);
 
   console.log(error, "error");
